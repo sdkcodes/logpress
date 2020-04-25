@@ -5,7 +5,7 @@ namespace Sdkcodes\Logpress\Middleware;
 use Closure;
 use Sdkcodes\Logpress\LogWriter;
 
-class LogApiRequests
+class LogRequests
 {
     /**
      * Handle an incoming request.

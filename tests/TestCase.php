@@ -2,22 +2,23 @@
 
 namespace Sdkcodes\Logpress\Tests;
 
-use Orchestra\Testbench\Concerns\CreatesApplication;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Orchestra\Testbench\TestCase as TestbenchTestCase;
+use Sdkcodes\Logpress\LogpressServiceProvider;
 
-abstract class TestCase extends BaseTestCase
+class TestCase extends TestbenchTestCase
 {
-    use CreatesApplication;
 
-    public function setUp(): void{
-        parent::setUp();
-    }
+    // public function setUp(): void{
+    //     parent::setUp();
+    // }
 
-    public function getEnvironmentSetUp($app){
+    // public function getEnvironmentSetUp($app){
+    //     return [
+    //         LogpressServiceProvider::class,
+    //     ];
+    // }
+
+    // public function getPackageProviders($app){
         
-    }
-
-    public function getPackageProviders($app){
-
-    }
+    // }
 }

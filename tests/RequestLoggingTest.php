@@ -17,7 +17,7 @@ class RequestLoggingTest extends TestCase
      */
     public function testRequestWrittenToLog()
     {
-        $response = $this->get('/')->dump();
+        $response = $this->get('/');
 
         Log::shouldReceive('info')
             ->with('Body: {"q" : "body"}');

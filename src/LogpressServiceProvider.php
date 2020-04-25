@@ -24,7 +24,7 @@ class LogpressServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__."/config/logpress.php" => config_path('logpress')
+            __DIR__."/config/logpress.php" => config_path('logpress.php')
         ], 'config');
         
     }
