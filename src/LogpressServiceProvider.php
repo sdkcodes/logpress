@@ -13,7 +13,7 @@ class LogpressServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->mergeConfigFrom(__DIR__."/config/logpress.php", "logpress");
     }
 
     /**
@@ -23,6 +23,9 @@ class LogpressServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishes([
+            __DIR__."/config/logpress.php" => config_path('logpress')
+        ], 'config');
+        
     }
 }
