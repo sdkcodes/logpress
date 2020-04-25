@@ -1,0 +1,30 @@
+{
+    "name": "sdkcodes/logpress",
+    "description": "A laravel package to log incoming requests to your app",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sodeeq Elusoji",
+            "email": "omoelu1@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sdkcodes\\Logpress\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sdkcodes\\Logpress\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers" : [
+                "Sdkcodes\\Logpress\\LogpressServiceProvider"
+            ]
+        }
+    }
+}
